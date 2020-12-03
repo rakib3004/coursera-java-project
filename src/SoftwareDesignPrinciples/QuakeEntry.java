@@ -22,7 +22,7 @@ public class QuakeEntry {
         this.magnitude = magnitude;
     }
 
-    public Location getMyLocation() {
+    public Location getMyLocation(Location from) {
         return myLocation;
     }
 
@@ -61,6 +61,10 @@ public class QuakeEntry {
         public Location(double lat, double lon) {
             this.lat = lat;
             this.lon = lon;
+        }
+        public Location distanceTo(Location from){
+
+            return from;
         }
     }
 }

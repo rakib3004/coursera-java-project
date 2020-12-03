@@ -20,4 +20,15 @@ for(QuakeEntry quakeEntry : quakeData ){
 }
 return answer;
     }
+    public  ArrayList<QuakeEntry> filterByDistanceFrom(ArrayList<QuakeEntry> quakeData,
+                                                       double maximumDistance, QuakeEntry.Location
+                                                               from){
+        ArrayList<QuakeEntry> answer = new ArrayList<QuakeEntry>();
+        for(QuakeEntry quakeEntryData : quakeData){
+           /* if(quakeEntryData.getMyLocation(from)*//*.distanceTo(from)*//*<=maximumDistance){
+                answer.add(quakeEntryData);
+            }*/
+        }
+        return  answer;
+    }
 }
