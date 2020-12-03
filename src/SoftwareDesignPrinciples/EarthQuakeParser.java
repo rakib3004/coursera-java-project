@@ -11,4 +11,13 @@ public class EarthQuakeParser {
          ArrayList<QuakeEntry> quakeEntryArrayList = null;
         return quakeEntryArrayList;
     }
+    public ArrayList<QuakeEntry> filterByMagnitude(ArrayList<QuakeEntry> quakeData, double minimumMagnitude){
+ArrayList<QuakeEntry> answer=  new ArrayList<QuakeEntry>();
+for(QuakeEntry quakeEntry : quakeData ){
+    if(quakeEntry.getMagnitude()>=minimumMagnitude){
+        answer.add(quakeEntry);
+    }
+}
+return answer;
+    }
 }
