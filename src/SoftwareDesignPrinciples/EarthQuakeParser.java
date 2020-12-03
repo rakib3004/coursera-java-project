@@ -3,6 +3,7 @@ package SoftwareDesignPrinciples;
 import java.util.ArrayList;
 
 public class EarthQuakeParser {
+
     public EarthQuakeParser() {
     }
 
