@@ -9,6 +9,11 @@ public class EarthQuakeParser {
 
     public ArrayList<QuakeEntry> read(String sourceInfo){
          ArrayList<QuakeEntry> quakeEntryArrayList = null;
+        Filter filter = new MinMagFilter(4.0);
+        ArrayList<QuakeEntry> largeQuakes = filter(quakeEntryArrayList,filter);
+        QuakeEntry.Location myLocation = new QuakeEntry.Location(45.2,88.96);
+    /*    filter = new DistanceFilter(myLocation,100);
+        ArrayList<QuakeEntry> shallowQuakes  = filter(quakeEntryArrayList,filter);*/
         return quakeEntryArrayList;
     }
     public ArrayList<QuakeEntry> filterByMagnitude(ArrayList<QuakeEntry> quakeData, double minimumMagnitude){
