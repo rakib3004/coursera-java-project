@@ -31,4 +31,13 @@ return answer;
         }
         return  answer;
     }
+    public ArrayList<QuakeEntry> filter(ArrayList<QuakeEntry> quakeData,Filter filter){
+        ArrayList<QuakeEntry> answer = new ArrayList<QuakeEntry>();
+        for (QuakeEntry quakeEntry : quakeData){
+            if(filter.satisfies(quakeEntry)){
+                answer.add(quakeEntry);
+            }
+        }
+        return  answer;
+    }
 }
