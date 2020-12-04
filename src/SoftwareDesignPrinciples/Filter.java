@@ -1,10 +1,6 @@
 package SoftwareDesignPrinciples;
 
-public class Filter {
-    public Filter() {
-    }
+public interface Filter {
 
-    public boolean satisfies(QuakeEntry quakeEntry){
-        return  true;
-    }
+    public boolean satisfies(QuakeEntry quakeEntry);
 }
