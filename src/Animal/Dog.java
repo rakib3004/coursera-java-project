@@ -13,6 +13,7 @@ public class Dog extends Pet {
         // Task 2: call constructor of ancestor class Pet
         // Task 3: add multiplier 7 to constructor call
         super(someName, someAge, 7);
+            int aBig = 115456;
     }
     
     // methods  
